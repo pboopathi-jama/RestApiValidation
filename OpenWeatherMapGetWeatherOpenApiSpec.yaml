@@ -1,0 +1,139 @@
+openapi: 3.0.1
+info:
+  description: This is a sample OpenWeatherMap ApiSpec.
+  version: 1.0.0
+  title: OpenWeatherMap Api Specification
+externalDocs:
+  description: Find out more about OpenWeatherMap
+  url: https://openweathermap.org/
+servers:
+- url: https://api.openweathermap.org/data/2.5
+- url: http://api.openweathermap.org/data/2.5
+tags:
+- name: weather
+  description: Current weather data
+  externalDocs:
+    description: Find out more
+    url: https://openweathermap.org/current
+paths:
+  /weather:
+    get:
+      tags:
+      - weather
+      summary: By city name or By city ID or By geographic coordinates or By ZIP code based on query parameter
+      description: You can call by city name or city name and country code. API responds with a list of results that match a searching word. For example `api.openweathermap.org/data/2.5/weather?q={city name}` or `api.openweathermap.org/data/2.5/weather?q={city name},{country code}` or `api.openweathermap.org/data/2.5/weather?id=2172797`
+      parameters:
+        - in: query
+          name: q
+          schema:
+            type: string
+          description: city name and country code divided by comma, use ISO 3166 country code
+          required: true
+        - in: query
+          name: APPID
+          schema:
+            type: string
+          description: API key
+          required: true
+
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/currentWeatherResponse'
+
+components:
+  schemas:
+    currentWeatherResponse:
+      type: object
+      properties:
+        coord:
+          type: object
+          properties:
+            lon:
+              type: number
+              format: int64
+            lat:
+              type: number
+              format: int64
+        weather:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: number
+                format: int64
+              main:
+                type: string
+              description:
+                type: string
+              icon:
+                type: string
+        base:
+          type: string
+        main:
+          type: object
+          properties:
+            temp:
+              type: number
+            pressure:
+              type: number
+            humidity:
+              type: number
+            temp_min:
+              type: number
+            temp_max:
+              type: number
+
+        visibility:
+          type: number
+        wind:
+          type: object
+          properties:
+            speed:
+              type: number
+            deg:
+              type: number
+            gust:
+              type: number
+        clouds:
+          type: object
+          properties:
+            all:
+              type: number
+        dt:
+          type: number
+        sys:
+          type: object
+          properties:
+            type:
+              type: number
+            id:
+              type: number
+            message:
+              type: number
+            country:
+              type: string
+            sunset:
+              type: number
+            sunrise:
+              type: number
+        rain:
+          type: object
+          properties:
+            1h:
+              type: number
+        id:
+          type: number
+        name:
+          type: string
+        cod:
+          type: number
+        snow:
+          type: object
+          properties:
+            1h:
+              type: number

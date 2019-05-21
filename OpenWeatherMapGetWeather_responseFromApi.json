@@ -1,0 +1,52 @@
+{
+  "coord" : {
+    "lon" : -105.41,
+    "lat" : 36.71
+  },
+  "weather" : [ {
+    "id" : 500,
+    "main" : "Rain",
+    "description" : "light rain",
+    "icon" : "10d"
+  }, {
+    "id" : 601,
+    "main" : "Snow",
+    "description" : "snow",
+    "icon" : "13d"
+  } ],
+  "base" : "stations",
+  "main" : {
+    "temp" : 274.83,
+    "pressure" : 1008,
+    "humidity" : 56,
+    "temp_min" : 273.71,
+    "temp_max" : 277.15
+  },
+  "visibility" : 2414,
+  "wind" : {
+    "speed" : 7.7,
+    "deg" : 260,
+    "gust" : 9.3
+  },
+  "rain" : {
+    "1h" : 0.76
+  },
+  "clouds" : {
+    "all" : 66
+  },
+  "dt" : 1558392804,
+  "sys" : {
+    "type" : 1,
+    "id" : 3371,
+    "message" : 0.0049,
+    "country" : "US",
+    "sunrise" : 1558353047,
+    "sunset" : 1558404349
+  },
+  "id" : 5485658,
+  "name" : "Red River",
+  "cod" : 200,
+  "snow" : {
+    "1h" : 0.76
+  }
+}
