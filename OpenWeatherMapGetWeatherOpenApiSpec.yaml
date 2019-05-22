@@ -8,7 +8,6 @@ externalDocs:
   url: https://openweathermap.org/
 servers:
 - url: https://api.openweathermap.org/data/2.5
-- url: http://api.openweathermap.org/data/2.5
 tags:
 - name: weather
   description: Current weather data
@@ -20,7 +19,7 @@ paths:
     get:
       tags:
       - weather
-      summary: By city name or By city ID or By geographic coordinates or By ZIP code based on query parameter
+      summary: By city name  based on query parameter
       description: You can call by city name or city name and country code. API responds with a list of results that match a searching word. For example `api.openweathermap.org/data/2.5/weather?q={city name}` or `api.openweathermap.org/data/2.5/weather?q={city name},{country code}` or `api.openweathermap.org/data/2.5/weather?id=2172797`
       parameters:
         - in: query
@@ -131,6 +130,8 @@ components:
         name:
           type: string
         cod:
+          type: number
+        timezone:
           type: number
         snow:
           type: object

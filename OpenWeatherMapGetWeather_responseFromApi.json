@@ -1,41 +1,42 @@
 {
   "coord" : {
-    "lon" : -122.67,
-    "lat" : 45.52
+    "lon" : -105.41,
+    "lat" : 36.71
   },
   "weather" : [ {
-    "id" : 803,
+    "id" : 804,
     "main" : "Clouds",
-    "description" : "broken clouds",
-    "icon" : "04n"
+    "description" : "overcast clouds",
+    "icon" : "04d"
   } ],
   "base" : "stations",
   "main" : {
-    "temp" : 290.39,
-    "pressure" : 1007,
-    "humidity" : 52,
-    "temp_min" : 288.71,
-    "temp_max" : 292.15
+    "temp" : 285.5,
+    "pressure" : 1012,
+    "humidity" : 39,
+    "temp_min" : 280.93,
+    "temp_max" : 288.71
   },
   "visibility" : 16093,
   "wind" : {
-    "speed" : 4.1,
-    "deg" : 340,
-    "gust" : 7.7
+    "speed" : 5.7,
+    "deg" : 230,
+    "gust" : 10.3
   },
   "clouds" : {
-    "all" : 75
+    "all" : 85
   },
-  "dt" : 1558487244,
+  "dt" : 1558554843,
   "sys" : {
     "type" : 1,
-    "id" : 6207,
-    "message" : 0.0087,
+    "id" : 3371,
+    "message" : 0.0058,
     "country" : "US",
-    "sunrise" : 1558442036,
-    "sunset" : 1558496453
+    "sunrise" : 1558525769,
+    "sunset" : 1558577245
   },
-  "id" : 5746545,
-  "name" : "Portland",
-  "cod" : 200
+  "id" : 5485658,
+  "name" : "Red River",
+  "cod" : 200,
+  "timezone" : -21600
 }

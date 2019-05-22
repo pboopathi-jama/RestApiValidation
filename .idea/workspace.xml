@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95225605-47e4-4749-9741-96cd82867626" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Util/JsonSchemaValidationUtil.class" afterPath="$PROJECT_DIR$/target/classes/Util/JsonSchemaValidationUtil.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/client/OpenWeatherMapTest.class" afterPath="$PROJECT_DIR$/target/test-classes/client/OpenWeatherMapTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OpenWeatherMapGetWeatherOpenApiSpec.yaml" afterPath="$PROJECT_DIR$/OpenWeatherMapGetWeatherOpenApiSpec.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OpenWeatherMapGetWeather_outputSchema.json" afterPath="$PROJECT_DIR$/OpenWeatherMapGetWeather_outputSchema.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OpenWeatherMapGetWeather_responseFromApi.json" afterPath="$PROJECT_DIR$/OpenWeatherMapGetWeather_responseFromApi.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Util/JsonSchemaValidationUtil.java" afterPath="$PROJECT_DIR$/src/main/java/Util/JsonSchemaValidationUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/api/OpenWeatherMap.java" afterPath="$PROJECT_DIR$/src/main/java/api/OpenWeatherMap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/client/OpenWeatherMapTest.java" afterPath="$PROJECT_DIR$/src/test/java/client/OpenWeatherMapTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +24,21 @@
       <file leaf-file-name="OpenWeatherMapTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/client/OpenWeatherMapTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+            <state relative-caret-position="412">
+              <caret line="127" column="35" lean-forward="false" selection-start-line="127" selection-start-column="35" selection-end-line="127" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OpenWeatherMapGetWeatherOpenApiSpec.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OpenWeatherMapGetWeatherOpenApiSpec.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="139" column="26" lean-forward="false" selection-start-line="139" selection-start-column="26" selection-end-line="139" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -76,11 +84,11 @@
       <list>
         <option value="$PROJECT_DIR$/OpenWeatherMapGetWeather_outputSchema.json" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/OpenWeatherMapGetWeatherOpenApiSpec.yaml" />
         <option value="$PROJECT_DIR$/processYaml.sh" />
         <option value="$PROJECT_DIR$/src/main/java/api/OpenWeatherMap.java" />
         <option value="$PROJECT_DIR$/src/main/java/Util/JsonSchemaValidationUtil.java" />
         <option value="$PROJECT_DIR$/src/test/java/client/OpenWeatherMapTest.java" />
+        <option value="$PROJECT_DIR$/OpenWeatherMapGetWeatherOpenApiSpec.yaml" />
       </list>
     </option>
   </component>
@@ -315,7 +323,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.OpenWeatherMapTest.validateOpenWeatherApiGetWeatherTest">
+  <component name="RunManager" selected="JUnit.OpenWeatherMapTest.validateOpenWeatherApiGetWeatherTestForRedRiver">
     <configuration name="OpenWeatherMapTest.validateOpenWeatherApiGetWeatherTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -531,10 +539,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.OpenWeatherMapTest.validateOpenWeatherApiGetWeatherTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.OpenWeatherMapTest.validateOpenWeatherApiGetWeatherTestForHouston" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.OpenWeatherMapTest.validateOpenWeatherApiGetWeatherTestForRedRiver" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.OpenWeatherMapTest.validateOpenWeatherApiGetWeatherTestForAustin" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.OpenWeatherMapTest.validateOpenWeatherApiGetWeatherTestForRedRiver" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.OpenWeatherMapTest.validateOpenWeatherApiGetWeatherTestForAustin" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.OpenWeatherMapTest.validateOpenWeatherApiGetWeatherTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.OpenWeatherMapTest.validateOpenWeatherApiGetWeatherTestForHouston" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.OpenWeatherMapTest.validateOpenWeatherApiGetWeatherTestForDallas" />
       </list>
     </recent_temporary>
@@ -557,44 +565,52 @@
       <workItem from="1558309576078" duration="13807000" />
       <workItem from="1558418327993" duration="6000" />
       <workItem from="1558418356491" duration="65000" />
-      <workItem from="1558458056630" duration="5599000" />
+      <workItem from="1558458056630" duration="6766000" />
     </task>
+    <task id="LOCAL-00001" summary="Removing unused methods">
+      <created>1558487833431</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1558487833431</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="OpenWeatherMapTest_validateOpenWeatherApiGetWeatherTest - 2019.05.21 at 15h 56m 50s.xml">
+    <history-entry file="OpenWeatherMapTest_validateOpenWeatherApiGetWeatherTest - 2019.05.22 at 12h 49m 59s.xml">
       <configuration name="OpenWeatherMapTest.validateOpenWeatherApiGetWeatherTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OpenWeatherMapTest_validateOpenWeatherApiGetWeatherTest - 2019.05.21 at 15h 56m 54s.xml">
+    <history-entry file="OpenWeatherMapTest_validateOpenWeatherApiGetWeatherTest - 2019.05.22 at 12h 50m 35s.xml">
       <configuration name="OpenWeatherMapTest.validateOpenWeatherApiGetWeatherTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OpenWeatherMapTest_validateOpenWeatherApiGetWeatherTest - 2019.05.21 at 16h 08m 32s.xml">
+    <history-entry file="OpenWeatherMapTest_validateOpenWeatherApiGetWeatherTest - 2019.05.22 at 12h 51m 01s.xml">
       <configuration name="OpenWeatherMapTest.validateOpenWeatherApiGetWeatherTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OpenWeatherMapTest_validateOpenWeatherApiGetWeatherTest - 2019.05.21 at 16h 08m 41s.xml">
+    <history-entry file="OpenWeatherMapTest_validateOpenWeatherApiGetWeatherTest - 2019.05.22 at 12h 51m 28s.xml">
       <configuration name="OpenWeatherMapTest.validateOpenWeatherApiGetWeatherTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OpenWeatherMapTest_validateOpenWeatherApiGetWeatherTest - 2019.05.21 at 18h 07m 21s.xml">
+    <history-entry file="OpenWeatherMapTest_validateOpenWeatherApiGetWeatherTest - 2019.05.22 at 12h 52m 28s.xml">
       <configuration name="OpenWeatherMapTest.validateOpenWeatherApiGetWeatherTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OpenWeatherMapTest_validateOpenWeatherApiGetWeatherTestForHouston - 2019.05.21 at 14h 43m 18s.xml">
-      <configuration name="OpenWeatherMapTest.validateOpenWeatherApiGetWeatherTestForHouston" configurationId="JUnit" />
+    <history-entry file="OpenWeatherMapTest_validateOpenWeatherApiGetWeatherTest - 2019.05.22 at 12h 53m 22s.xml">
+      <configuration name="OpenWeatherMapTest.validateOpenWeatherApiGetWeatherTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OpenWeatherMapTest_validateOpenWeatherApiGetWeatherTestForHouston - 2019.05.21 at 15h 18m 47s.xml">
-      <configuration name="OpenWeatherMapTest.validateOpenWeatherApiGetWeatherTestForHouston" configurationId="JUnit" />
+    <history-entry file="OpenWeatherMapTest_validateOpenWeatherApiGetWeatherTestForAustin - 2019.05.22 at 12h 51m 46s.xml">
+      <configuration name="OpenWeatherMapTest.validateOpenWeatherApiGetWeatherTestForAustin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OpenWeatherMapTest_validateOpenWeatherApiGetWeatherTestForHouston - 2019.05.21 at 15h 19m 24s.xml">
-      <configuration name="OpenWeatherMapTest.validateOpenWeatherApiGetWeatherTestForHouston" configurationId="JUnit" />
+    <history-entry file="OpenWeatherMapTest_validateOpenWeatherApiGetWeatherTestForAustin - 2019.05.22 at 12h 53m 35s.xml">
+      <configuration name="OpenWeatherMapTest.validateOpenWeatherApiGetWeatherTestForAustin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OpenWeatherMapTest_validateOpenWeatherApiGetWeatherTestForHouston - 2019.05.21 at 15h 19m 31s.xml">
-      <configuration name="OpenWeatherMapTest.validateOpenWeatherApiGetWeatherTestForHouston" configurationId="JUnit" />
+    <history-entry file="OpenWeatherMapTest_validateOpenWeatherApiGetWeatherTestForAustin - 2019.05.22 at 12h 53m 45s.xml">
+      <configuration name="OpenWeatherMapTest.validateOpenWeatherApiGetWeatherTestForAustin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="OpenWeatherMapTest_validateOpenWeatherApiGetWeatherTestForHouston - 2019.05.21 at 15h 19m 35s.xml">
-      <configuration name="OpenWeatherMapTest.validateOpenWeatherApiGetWeatherTestForHouston" configurationId="JUnit" />
+    <history-entry file="OpenWeatherMapTest_validateOpenWeatherApiGetWeatherTestForRedRiver - 2019.05.22 at 12h 53m 59s.xml">
+      <configuration name="OpenWeatherMapTest.validateOpenWeatherApiGetWeatherTestForRedRiver" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19477000" />
+    <option name="totallyTimeSpent" value="20644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="960" extended-state="6" />
@@ -608,9 +624,9 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6009501" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289941" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15689866" sideWeight="0.49585798" order="4" side_tool="false" content_ui="combo" />
@@ -634,6 +650,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Removing unused methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removing unused methods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -968,6 +988,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
           <caret line="112" column="25" lean-forward="false" selection-start-line="112" selection-start-column="25" selection-end-line="112" selection-end-column="25" />
+          <folding>
+            <element signature="e#4604#4605#0" expanded="false" />
+            <element signature="e#4647#4648#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1008,14 +1032,6 @@
             <element signature="e#1272#1273#0" expanded="false" />
             <element signature="e#1309#1310#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenWeatherMapGetWeatherOpenApiSpec.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="136" column="21" lean-forward="false" selection-start-line="136" selection-start-column="10" selection-end-line="136" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1135,10 +1151,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/OpenWeatherMapGetWeatherOpenApiSpec.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="139" column="26" lean-forward="false" selection-start-line="139" selection-start-column="26" selection-end-line="139" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/client/OpenWeatherMapTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+        <state relative-caret-position="412">
+          <caret line="127" column="35" lean-forward="false" selection-start-line="127" selection-start-column="35" selection-end-line="127" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
