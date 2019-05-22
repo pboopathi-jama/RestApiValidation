@@ -37,4 +37,6 @@ public class OpenWeatherMap {
     {
         return buildSearchQuery(getWeatherMapDataBaseUrl(CURRENT_WEATHER), city);
     }
+
+    //https://api.openweathermap.org/data/2.5/weather?APPID=be89a2b8fe4c119e386b348dda4c250c&q=portland
 }

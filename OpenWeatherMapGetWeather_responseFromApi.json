@@ -1,52 +1,41 @@
 {
   "coord" : {
-    "lon" : -105.41,
-    "lat" : 36.71
+    "lon" : -122.67,
+    "lat" : 45.52
   },
   "weather" : [ {
-    "id" : 500,
-    "main" : "Rain",
-    "description" : "light rain",
-    "icon" : "10d"
-  }, {
-    "id" : 601,
-    "main" : "Snow",
-    "description" : "snow",
-    "icon" : "13d"
+    "id" : 803,
+    "main" : "Clouds",
+    "description" : "broken clouds",
+    "icon" : "04n"
   } ],
   "base" : "stations",
   "main" : {
-    "temp" : 274.83,
-    "pressure" : 1008,
-    "humidity" : 56,
-    "temp_min" : 273.71,
-    "temp_max" : 277.15
+    "temp" : 290.39,
+    "pressure" : 1007,
+    "humidity" : 52,
+    "temp_min" : 288.71,
+    "temp_max" : 292.15
   },
-  "visibility" : 2414,
+  "visibility" : 16093,
   "wind" : {
-    "speed" : 7.7,
-    "deg" : 260,
-    "gust" : 9.3
-  },
-  "rain" : {
-    "1h" : 0.76
+    "speed" : 4.1,
+    "deg" : 340,
+    "gust" : 7.7
   },
   "clouds" : {
-    "all" : 66
+    "all" : 75
   },
-  "dt" : 1558392804,
+  "dt" : 1558487244,
   "sys" : {
     "type" : 1,
-    "id" : 3371,
-    "message" : 0.0049,
+    "id" : 6207,
+    "message" : 0.0087,
     "country" : "US",
-    "sunrise" : 1558353047,
-    "sunset" : 1558404349
+    "sunrise" : 1558442036,
+    "sunset" : 1558496453
   },
-  "id" : 5485658,
-  "name" : "Red River",
-  "cod" : 200,
-  "snow" : {
-    "1h" : 0.76
-  }
+  "id" : 5746545,
+  "name" : "Portland",
+  "cod" : 200
 }

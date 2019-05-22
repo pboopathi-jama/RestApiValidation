@@ -5,7 +5,6 @@ import Util.RestClientUtil;
 import Util.ShellIUtil;
 import com.github.fge.jsonschema.core.exceptions.ProcessingException;
 import org.junit.Test;
-import org.junit.internal.runners.statements.Fail;
 
 import java.io.File;
 import java.io.IOException;
@@ -26,20 +25,20 @@ public class OpenWeatherMapTest {
     @Test
     public void validateOpenWeatherApiGetWeatherTest()
     {
-        //converted the yaml file to jsonschema
+        //converting yaml file to jsonschema
         ShellIUtil.runCommandWithTwoParam(PROCESS_YAML_SCRIPT, OPEN_WEATHER_MAP_GET_WEATHER_SPEC, OPEN_WEATHER_MAP_GET_WEATHER_PROCESSED_JSON_SCHEMA);
 
-        //Hit the public API and write that to a output file using objectmapper in jackson library
+        //Hit openweatheMap public API using rest client and write that to a output file using objectmapper in jackson library
         RestClientUtil.writeOpenWeatherMapByCity(OPEN_WEATHER_MAP_GET_WEATHER_RESPONSE_FROM_API, "portland");
 
-        //Using json-schema-validator library both the json responses are validated
         File schemaFile = new File(OPEN_WEATHER_MAP_GET_WEATHER_PROCESSED_JSON_SCHEMA);
         File jsonFile = new File(OPEN_WEATHER_MAP_GET_WEATHER_RESPONSE_FROM_API);
 
-        //Comparison of two json files
+        //Using json-schema-validator library validating jsonschema(Specification) and jsonresponse(Response from API)
         try {
+
             JsonSchemaValidationUtil.validateJson(schemaFile, jsonFile);
-//            assertThat(JsonSchemaValidationUtil.isJsonValid(schemaFile, jsonFile), is(true));
+          assertThat(JsonSchemaValidationUtil.isJsonValid(schemaFile, jsonFile), is(true));
         } catch (ProcessingException e) {
             e.printStackTrace();
             fail("ProcessingException");
