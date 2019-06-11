@@ -1,42 +1,40 @@
 {
   "coord" : {
-    "lon" : -105.41,
-    "lat" : 36.71
+    "lon" : 120.99,
+    "lat" : 15.79
   },
   "weather" : [ {
     "id" : 804,
     "main" : "Clouds",
     "description" : "overcast clouds",
-    "icon" : "04d"
+    "icon" : "04n"
   } ],
   "base" : "stations",
   "main" : {
-    "temp" : 285.5,
-    "pressure" : 1012,
-    "humidity" : 39,
-    "temp_min" : 280.93,
-    "temp_max" : 288.71
+    "temp" : 300.5,
+    "pressure" : 1009,
+    "humidity" : 81,
+    "temp_min" : 300.5,
+    "temp_max" : 300.5,
+    "grnd_level" : 1005.22,
+    "sea_level" : 1009.05
   },
-  "visibility" : 16093,
   "wind" : {
-    "speed" : 5.7,
-    "deg" : 230,
-    "gust" : 10.3
+    "speed" : 1.03,
+    "deg" : 76
   },
   "clouds" : {
-    "all" : 85
+    "all" : 100
   },
-  "dt" : 1558554843,
+  "dt" : 1560272689,
   "sys" : {
-    "type" : 1,
-    "id" : 3371,
-    "message" : 0.0058,
-    "country" : "US",
-    "sunrise" : 1558525769,
-    "sunset" : 1558577245
+    "message" : 0.0055,
+    "country" : "PH",
+    "sunrise" : 1560288260,
+    "sunset" : 1560335241
   },
-  "id" : 5485658,
-  "name" : "Red River",
+  "id" : 1689431,
+  "name" : "San Jose",
   "cod" : 200,
-  "timezone" : -21600
+  "timezone" : 28800
 }

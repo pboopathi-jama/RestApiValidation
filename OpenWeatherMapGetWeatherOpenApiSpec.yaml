@@ -20,13 +20,13 @@ paths:
       tags:
       - weather
       summary: By city name  based on query parameter
-      description: You can call by city name or city name and country code. API responds with a list of results that match a searching word. For example `api.openweathermap.org/data/2.5/weather?q={city name}` or `api.openweathermap.org/data/2.5/weather?q={city name},{country code}` or `api.openweathermap.org/data/2.5/weather?id=2172797`
+      description: You can call by city name . API responds with a list of results that match a searching word. For example `api.openweathermap.org/data/2.5/weather?q={city name}`
       parameters:
         - in: query
           name: q
           schema:
             type: string
-          description: city name and country code divided by comma, use ISO 3166 country code
+          description: city name
           required: true
         - in: query
           name: APPID
@@ -85,6 +85,10 @@ components:
             temp_min:
               type: number
             temp_max:
+              type: number
+            grnd_level:
+              type: number
+            sea_level:
               type: number
 
         visibility:
