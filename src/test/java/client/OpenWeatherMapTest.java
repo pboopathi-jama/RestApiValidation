@@ -23,7 +23,7 @@ public class OpenWeatherMapTest {
     public static final String OPEN_WEATHER_MAP_GET_WEATHER_RESPONSE_FROM_API = OPEN_WEATHER_MAP_GET_WEATHER + "_responseFromApi.json";
 
     @Test
-    public void validateOpenWeatherApiGetWeatherTest()
+    public void validateOpenWeatherApiGetWeatherTestForPortland()
     {
         //converting yaml file to jsonschema
         ShellIUtil.runCommandWithTwoParam(PROCESS_YAML_SCRIPT, OPEN_WEATHER_MAP_GET_WEATHER_SPEC, OPEN_WEATHER_MAP_GET_WEATHER_PROCESSED_JSON_SCHEMA);
@@ -121,29 +121,6 @@ public class OpenWeatherMapTest {
     {
         ShellIUtil.runCommandWithTwoParam(PROCESS_YAML_SCRIPT, OPEN_WEATHER_MAP_GET_WEATHER_SPEC, OPEN_WEATHER_MAP_GET_WEATHER_PROCESSED_JSON_SCHEMA);
         RestClientUtil.writeOpenWeatherMapByCity(OPEN_WEATHER_MAP_GET_WEATHER_RESPONSE_FROM_API, "Houston");
-
-        File schemaFile = new File(OPEN_WEATHER_MAP_GET_WEATHER_PROCESSED_JSON_SCHEMA);
-        File jsonFile = new File(OPEN_WEATHER_MAP_GET_WEATHER_RESPONSE_FROM_API);
-
-        //Comparison of two json files
-        try {
-            JsonSchemaValidationUtil.validateJson(schemaFile, jsonFile);
-            assertThat(JsonSchemaValidationUtil.isJsonValid(schemaFile, jsonFile), is(true));
-        } catch (ProcessingException e) {
-            e.printStackTrace();
-            fail("ProcessingException");
-        } catch (IOException e) {
-            e.printStackTrace();
-            fail("ProcessingException");
-        }
-    }
-
-
-    @Test
-    public void validateOpenWeatherApiGetWeatherTestForRedRiver()
-    {
-        ShellIUtil.runCommandWithTwoParam(PROCESS_YAML_SCRIPT, OPEN_WEATHER_MAP_GET_WEATHER_SPEC, OPEN_WEATHER_MAP_GET_WEATHER_PROCESSED_JSON_SCHEMA);
-        RestClientUtil.writeOpenWeatherMapByCity(OPEN_WEATHER_MAP_GET_WEATHER_RESPONSE_FROM_API, "Red River");
 
         File schemaFile = new File(OPEN_WEATHER_MAP_GET_WEATHER_PROCESSED_JSON_SCHEMA);
         File jsonFile = new File(OPEN_WEATHER_MAP_GET_WEATHER_RESPONSE_FROM_API);

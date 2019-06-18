@@ -1,40 +1,41 @@
 {
   "coord" : {
-    "lon" : 120.99,
-    "lat" : 15.79
+    "lon" : -95.37,
+    "lat" : 29.76
   },
   "weather" : [ {
-    "id" : 804,
+    "id" : 803,
     "main" : "Clouds",
-    "description" : "overcast clouds",
+    "description" : "broken clouds",
     "icon" : "04n"
   } ],
   "base" : "stations",
   "main" : {
-    "temp" : 300.5,
-    "pressure" : 1009,
-    "humidity" : 81,
-    "temp_min" : 300.5,
-    "temp_max" : 300.5,
-    "grnd_level" : 1005.22,
-    "sea_level" : 1009.05
+    "temp" : 299.81,
+    "pressure" : 1013,
+    "humidity" : 74,
+    "temp_min" : 298.15,
+    "temp_max" : 301.48
   },
+  "visibility" : 16093,
   "wind" : {
-    "speed" : 1.03,
-    "deg" : 76
+    "speed" : 1.21,
+    "deg" : 292
   },
   "clouds" : {
-    "all" : 100
+    "all" : 75
   },
-  "dt" : 1560272689,
+  "dt" : 1560829042,
   "sys" : {
-    "message" : 0.0055,
-    "country" : "PH",
-    "sunrise" : 1560288260,
-    "sunset" : 1560335241
+    "type" : 1,
+    "id" : 4850,
+    "message" : 0.0115,
+    "country" : "US",
+    "sunrise" : 1560770450,
+    "sunset" : 1560821037
   },
-  "id" : 1689431,
-  "name" : "San Jose",
+  "id" : 4699066,
+  "name" : "Houston",
   "cod" : 200,
-  "timezone" : 28800
+  "timezone" : -18000
 }
